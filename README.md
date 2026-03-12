@@ -106,30 +106,43 @@ ollama run tinyllama
 This will download and install the lightweight language model.
 
 ---
+## 4 Create your Project Folder 
 
-## 4 Install Project Dependencies
+mkdir tiny-ai-agent
+cd tiny-ai-agent
+
+## 5 Create Virtual Env
+
+python -m venv venv
+
+Activate it 
+venv\Scripts\activate
+
+
+## 6 Install Project Dependencies/Libraries
 
 Navigate to the project folder and run:
 
-
-pip install -r requirements.txt
-
+pip install streamlit langchain langchain-community
 
 ---
 
-# Running the Application
+# Running the Application (from web server)
 
 Start the application using:
 
-
 streamlit run app.py
 
-
-Open your browser and navigate to:
-
+It automatically opens your browser and navigate to:
 
 http://localhost:8501
 
+---------------------
+# Running the Application (using terminal)
+
+Start the application using:
+
+python terminal-agent.py
 
 ---
 
@@ -140,6 +153,11 @@ http://localhost:8501
 - AI-generated explanations of system errors
 - Runs entirely locally without external APIs
 
+From Terminal perform the tasks using 
+Commands:
+1. ask <question>
+2. analyze <logfile>
+3. exit
 ---
 
 # Example Log
